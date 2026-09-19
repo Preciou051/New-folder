@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  color: #202124;
+}
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: white;
+}
+.level1-show {
+  display: none;
+}
+.level5-show {
+  display: none;
+}
+.nav-1 {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+}
+.nav-1 img {
+  height: 50px;
+}
+.nav-2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: fit-content;
+}
+.resources {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  width: fit-content;
+}
+.nav-3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.search-div {
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  background-color: #f5f6f7;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.slash {
+  padding: 3px 7px;
+  border-radius: 3px;
+  background-color: white;
+}
+.language {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #d9d9d9;
+  padding: 7px;
+}
+.signin {
+  padding: 10px;
+  color: black;
+}
+span {
+  font-size: 14px;
+  color: #6f7078;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.signin span {
+  color: black;
+}
+.main {
+  padding: 55px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.blocks {
+    width: 100%;
+}
+.blue-block {
+  background-color: #1a73e8;
+  color: white;
+  padding: 30px 20px;
+  width: 100%;
+}
+.lblue-block {
+  background-color: #e8f0fe;
+  color: #303f9f;
+  padding: 25px 30px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 40px 150px;
+}
+.left-hero {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.right-hero {
+  flex: 1;
+  padding: 50px;
+}
+.right-hero img {
+  width: 100%;
+  /* height: 300px; */
+}
+.left-hero h3 {
+  font-weight: 700;
+  font-size: 64px;
+}
+.left-hero p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.section-2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Ai {
+    padding: 70px 40px;
+    background-color: #F5F6F7;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 370px;
+    flex: 1;
+    min-width: 275px;
+    justify-content: center;
+    align-items: center;
+}
+.Ai img {
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+}
+.Ai h4 {
+    font-size: 32px;
+    font-weight: 500;
+    width: 100%;
+}
+.Ai p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.learn {
+    background-color: white;
+    border: 1px solid #1A73E8;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+.learn span {
+    color: #1A73E8;
+}
+
+@media (max-width: 1250px) {
+  .hero-section {
+    padding: 40px 60px;
+  }
+  .level1-show {
+    display: inline-flex;
+  }
+  .level1-hide {
+    display: none;
+  }
+}
+@media (max-width: 1160px) {
+  .level2-hide {
+    display: none;
+  }
+  .hero-section {
+    padding: 40px 40px;
+    gap: 40px;
+  }
+}
+@media (max-width: 1060px) {
+  .level3-hide {
+    display: none;
+  }
+  .hero-section {
+    padding: 40px 24px;
+    gap: 20px;
+  }
+}
+@media (max-width: 950px) {
+  .level4-hide {
+    display: none;
+  }
+  .hero-section {
+    padding: 40px 24px;
+    gap: 20px;
+  }
+  .right-hero {
+    padding: 10px;
+  }
+}
+@media (max-width: 830px) {
+  .level5-hide {
+    display: none;
+  }
+  .hero-section {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  .right-hero {
+    padding: 0px;
+  }
+  .search-div {
+    width: fit-content;
+    padding: 0;
+    background-color: white;
+  }
+  .level5-show {
+    display: inline-flex;
+  }
+}
+@media (max-width: 800px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .level6-hide {
+    display: none;
+  }
+  .left-hero {
+    gap: 15px;
+  }
+  .left-hero h3 {
+    font-size: 32px;
+  }
+  .left-hero p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .nav-1 img {
+    height: 40px;
+  }
+  .nav-3 {
+    gap: 10px;
+  }
+}
