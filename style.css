@@ -272,6 +272,28 @@ span {
   text-align: center;
 }
 
+.section-5 {
+  padding: 30px 120px;
+  background-color: #f5f6f7;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.section-5 .exploring {
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.section-5 img {
+  width: 285px;
+  height: 170px;
+}
+.explore-text .news {
+  font-size: 32px;
+  font-weight: 500;
+}
+
 @media (max-width: 1250px) {
   .hero-section {
     padding: 40px 60px;
@@ -285,7 +307,7 @@ span {
   .exploring {
     gap: 200px;
   }
-  .section-3, .section-4{
+  .section-3, .section-4, .section-5{
     padding: 40px 60px;
   }
 }
@@ -357,6 +379,11 @@ span {
     flex-direction: column-reverse;
     text-align: center;
   }
+  .section-5 {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
 }
 @media (max-width: 600px) {
   .level6-hide {
@@ -378,7 +405,7 @@ span {
   .nav-3 {
     gap: 10px;
   }
-  .section-3, .section-4 {
+  .section-3, .section-4, .section-5 {
     padding: 30px 20px;
   }
   .explore-text h4 {
