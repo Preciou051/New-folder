@@ -7,6 +7,7 @@
 body {
   color: #202124;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -141,11 +142,12 @@ span {
   font-size: 20px;
   line-height: 30px;
 }
+
 .section-2 {
   display: flex;
   align-items: center;
   gap: 30px;
-  padding: 0 30px;
+  padding: 0 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -157,7 +159,7 @@ span {
   flex-direction: column;
   gap: 30px;
   align-items: flex-start;
-  max-width: 370px;
+  max-width: 390px;
   flex: 1;
   min-width: 275px;
   justify-content: center;
@@ -191,7 +193,7 @@ span {
   font-weight: 500;
 }
 
-.section-3 {
+.section-3, .section-4{
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -210,6 +212,7 @@ span {
 }
 .explore-text h4 {
   font-size: 48px;
+  font-weight: 700;
 }
 .explore-text span {
   font-size: 16px;
@@ -250,6 +253,25 @@ span {
   line-height: 20px;
 }
 
+.section-4{
+  background-color: white;
+}
+.subsection {
+  padding: 0;
+}
+.courses {
+  text-align: center;
+}
+.Ai .course {
+  font-size: 11px;
+  text-align: left;
+  color: #174EB3;
+  width: 100%;
+}
+.Ai .course-learn {
+  text-align: center;
+}
+
 @media (max-width: 1250px) {
   .hero-section {
     padding: 40px 60px;
@@ -263,7 +285,7 @@ span {
   .exploring {
     gap: 200px;
   }
-  .section-3 {
+  .section-3, .section-4{
     padding: 40px 60px;
   }
 }
@@ -356,7 +378,7 @@ span {
   .nav-3 {
     gap: 10px;
   }
-  .section-3 {
+  .section-3, .section-4 {
     padding: 30px 20px;
   }
   .explore-text h4 {
