@@ -17,9 +17,6 @@ header {
   padding: 0px 20px;
   background-color: white;
 }
-.level1-show {
-  display: none;
-}
 .level5-show {
   display: none;
 }
@@ -43,6 +40,9 @@ header {
   align-items: center;
   gap: 2px;
   width: fit-content;
+}
+.level1-show {
+  display: none;
 }
 .nav-3 {
   display: flex;
@@ -71,7 +71,7 @@ header {
 .language {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 7px;
   border: 1px solid #d9d9d9;
   padding: 7px;
 }
@@ -284,7 +284,7 @@ span {
 }
 
 .section-5 {
-  padding: 30px 120px;
+  padding: 40px 120px;
   background-color: #f5f6f7;
   width: 100%;
   display: flex;
@@ -443,7 +443,51 @@ button {
   box-shadow: 1px 2px rgba(0, 0, 0, 0.255);
 }
 
-@media (max-width: 1250px) {
+footer {
+  padding: 0px 20px 30px 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.foot-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.web {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+  justify-content: flex-start;
+}
+.web img {
+  height: 40px;
+  width: 160px;
+}
+.web span {
+  max-width: 400px;
+  white-space: wrap;
+}
+.contribute {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 15px;
+  height: fit-content;
+}
+.contribute p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.contribute span {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 1300px) {
   .hero-section {
     padding: 40px 60px;
   }
@@ -550,8 +594,8 @@ button {
     padding: 10px 20px;
   }
   .learn span {
-  font-size: 14px;
-}
+    font-size: 14px;
+  }
 }
 @media (max-width: 600px) {
   .level6-hide {
