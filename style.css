@@ -16,6 +16,8 @@ header {
   justify-content: space-between;
   padding: 0px 20px;
   background-color: white;
+  z-index: 10;
+  box-shadow: 0 2px 5px #d9d9d9da;
 }
 .level5-show {
   display: none;
@@ -110,6 +112,83 @@ span {
   padding: 25px 30px;
   font-size: 14px;
   width: 100%;
+}
+.nav-text:hover {
+  color: black;
+}
+.drop-down:hover {
+  transform: scaleY(-1);
+}
+.res-down {
+  display: flex;
+  padding: 40px 20px;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  /* width: 100dvw - 10px; */
+  background-color: white;
+  position: absolute;
+  box-shadow: 0 4px 5px #d9d9d9da;
+  top: 1000px;
+  /* bottom: 70px; */
+  left: 0;
+  flex-wrap: wrap;
+  /* transition: 0.5s; */
+  z-index: 5;
+}
+.ver-down {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+}
+.ver-down div {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 10px;
+}
+.more-down {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+  position: absolute;
+  background-color: white;
+  top: -300px;
+  box-shadow: 2px 2px 5px #0000005f;
+  z-index: 5;
+}
+.more1-show,
+.more2-show,
+.more3-show,
+.more4-show {
+  display: none;
+}
+.more:hover .more-down {
+  top: 35px;
+  transition: 0.2s;
+}
+.ver-down h4 {
+  font-size: 20px;
+}
+.ver-down span {
+  font-size: 12px;
+}
+.ver-down p {
+  font-size: 14px;
+}
+.resources:hover .res-down {
+  top: 35px;
+  /* bottom: -330px; */
+  /* transition: 0.5s; */
+}
+.ver-down p:hover {
+  color: #6f7078;
 }
 
 .hero-section {
@@ -491,7 +570,8 @@ footer {
   .hero-section {
     padding: 40px 60px;
   }
-  .level1-show {
+  .level1-show,
+  .more1-show {
     display: inline-flex;
   }
   .level1-hide {
@@ -518,6 +598,9 @@ footer {
   .exploring {
     gap: 100px;
   }
+  .more2-show {
+    display: inline-flex;
+  }
 }
 @media (max-width: 1060px) {
   .level3-hide {
@@ -526,6 +609,9 @@ footer {
   .hero-section {
     padding: 40px 24px;
     gap: 20px;
+  }
+  .more3-show {
+    display: inline-flex;
   }
 }
 @media (max-width: 950px) {
@@ -538,6 +624,9 @@ footer {
   }
   .right-hero {
     padding: 10px;
+  }
+  .more4-show {
+    display: inline-flex;
   }
 }
 @media (max-width: 830px) {
