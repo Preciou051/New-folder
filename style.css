@@ -187,13 +187,24 @@ span {
   height: fit-content;
   width: fit-content;
 }
+
+.learn:hover {
+  border: none;
+  background-color: transparent;
+}
+
+.learn:hover div {
+  background-color: red;
+}
+
 .learn span {
   color: #1a73e8;
   font-size: 16px;
   font-weight: 500;
 }
 
-.section-3, .section-4{
+.section-3,
+.section-4 {
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -253,7 +264,7 @@ span {
   line-height: 20px;
 }
 
-.section-4{
+.section-4 {
   background-color: white;
 }
 .subsection {
@@ -265,7 +276,7 @@ span {
 .Ai .course {
   font-size: 11px;
   text-align: left;
-  color: #174EB3;
+  color: #174eb3;
   width: 100%;
 }
 .Ai .course-learn {
@@ -294,6 +305,144 @@ span {
   font-weight: 500;
 }
 
+.section-6 {
+  display: flex;
+  gap: 20px;
+  padding: 60px 120px;
+  background-color: white;
+}
+.first-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+.first-6 h3 {
+  font-size: 32px;
+  font-weight: 700;
+  white-space: wrap;
+}
+.first-6 p {
+  font-size: 20px;
+  font-weight: 400;
+  white-space: wrap;
+}
+.second-third {
+  display: flex;
+  gap: 20px;
+  flex: 2;
+}
+.second-6,
+.third-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex: 1;
+}
+.lower,
+.upper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.lower p,
+.upper p {
+  font-size: 20px;
+  font-weight: 500;
+  white-space: wrap;
+}
+.lower span,
+.upper span {
+  font-size: 16px;
+  font-weight: 400;
+  white-space: wrap;
+  color: black;
+}
+.surface {
+  background-color: #f5f6f7;
+}
+.section-7 {
+  display: flex;
+  flex-direction: column;
+  margin-top: -80px;
+  gap: 30px;
+  padding: 50px 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f6f7;
+}
+.section-7 h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.section-7 .latest {
+  font-size: 20px;
+}
+form {
+  max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.names {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+.names div {
+  flex: 1;
+}
+.email {
+  width: 100%;
+}
+.names input,
+.email input {
+  padding: 7px;
+  width: 100%;
+  border: 1px solid #d9d9d9da;
+  font-size: 16px;
+}
+label {
+  font-size: 12px;
+  color: #6f7078;
+}
+.country {
+  width: 100%;
+}
+select {
+  background-color: #f5f6f7;
+  border: 1px solid #d9d9d9da;
+  width: 100%;
+  padding: 7px;
+  font-size: 16px;
+}
+.mid-text,
+.check {
+  font-size: 16px;
+  color: black;
+  line-height: 20px;
+}
+.checkbox {
+  width: 18px;
+  height: 18px;
+}
+form div {
+  width: 100%;
+}
+button {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  color: #1a73e8;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.255);
+}
+
 @media (max-width: 1250px) {
   .hero-section {
     padding: 40px 60px;
@@ -307,7 +456,10 @@ span {
   .exploring {
     gap: 200px;
   }
-  .section-3, .section-4, .section-5{
+  .section-3,
+  .section-4,
+  .section-5,
+  .section-6 {
     padding: 40px 60px;
   }
 }
@@ -373,6 +525,10 @@ span {
     align-items: center;
     text-align: center;
   }
+  .section-6 {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 @media (max-width: 800px) {
   .hero-section {
@@ -384,6 +540,18 @@ span {
     align-items: center;
     gap: 30px;
   }
+  .section-7 h2 {
+    font-size: 32px;
+  }
+  .names {
+    flex-direction: column;
+  }
+  .learn {
+    padding: 10px 20px;
+  }
+  .learn span {
+  font-size: 14px;
+}
 }
 @media (max-width: 600px) {
   .level6-hide {
@@ -405,10 +573,30 @@ span {
   .nav-3 {
     gap: 10px;
   }
-  .section-3, .section-4, .section-5 {
+  .section-3,
+  .section-4,
+  .section-5,
+  .section-6 {
     padding: 30px 20px;
   }
   .explore-text h4 {
     font-size: 32px;
+  }
+  .second-third {
+    flex-direction: column;
+  }
+  .first-6 h3 {
+    font-size: 24px;
+  }
+  .section-7 h2 {
+    font-size: 24px;
+  }
+  .section-7 .latest {
+    font-size: 16px;
+    text-align: center;
+  }
+  .mid-text,
+  .check {
+    font-size: 14px;
   }
 }

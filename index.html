@@ -1,371 +1,546 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web.dev</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="nav-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1.5em"
-          height="1.5em"
-          viewBox="0 0 24 24"
-          class="level5-show"
-        >
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path
-            fill="#000"
-            fill-rule="evenodd"
-            d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-            clip-rule="evenodd"
-          />
-        </svg>
-        <img src="./images/lockup.svg" alt="web.dev icon image" />
-      </div>
-      <div class="nav-2">
-        <div class="resources level4-hide">
-          <span>Resources</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1.5em"
-            height="1.5em"
-            viewBox="0 0 24 24"
-            class="phone-view"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path
-              fill="#000"
-              fill-rule="evenodd"
-              d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <span class="level3-hide">Discover</span>
-        <span class="level2-hide">Baseline</span>
-        <span class="level1-hide">How to use Baseline</span>
-        <span class="level1-hide">Blog</span>
-        <span class="level1-hide">Case studies</span>
-        <div class="resources level1-show level5-hide">
-          <span>More</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1.5em"
-            height="1.5em"
-            viewBox="0 0 24 24"
-            class="phone-view"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path
-              fill="#000"
-              fill-rule="evenodd"
-              d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-      <div class="nav-3">
-        <div class="search-div">
-          <div class="search">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1.5em"
-              height="1.5em"
-              viewBox="0 0 24 24"
-              class="phone-view"
-            >
-              <path d="M0 0h24v24H0z" fill="none" />
-              <path
-                fill="#000"
-                fill-rule="evenodd"
-                d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <span class="level5-hide">Search</span>
-          </div>
-          <div class="slash level5-hide"><span>/</span></div>
-        </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1.5em"
-          height="1.5em"
-          viewBox="0 0 24 24"
-          class="phone-view"
-        >
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path
-            fill="#000"
-            fill-rule="evenodd"
-            d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-            clip-rule="evenodd"
-          />
-        </svg>
-        <div class="language level6-hide">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1.5em"
-            height="1.5em"
-            viewBox="0 0 24 24"
-            class="phone-view"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path
-              fill="#000"
-              fill-rule="evenodd"
-              d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span>English</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1.5em"
-            height="1.5em"
-            viewBox="0 0 24 24"
-            class="phone-view"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path
-              fill="#000"
-              fill-rule="evenodd"
-              d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div class="signin">
-          <span>Sign in</span>
-        </div>
-      </div>
-    </header>
-    <div class="main">
-      <div class="blocks">
-        <div class="blue-block">
-          <p>
-            Guidance to build modern web experiences that work on any browser.
-          </p>
-        </div>
-        <div class="lblue-block">
-          <p>
-            We want to hear from you! We are looking for web developers to
-            participate in user research, product testing, discussion groups and
-            more.
-            <a href="">Apply now to join our WebDev Insights Community.</a>
-          </p>
-        </div>
-      </div>
 
-      <section class="hero-section">
-        <div class="left-hero">
-          <h3>Building a better web, together</h3>
-          <p>
-            We want to help you build beautiful, accessible, fast, and secure
-            websites that work cross-browser, and for all of your users. This
-            site is our home for content to help you on that journey, written by
-            members of the Chrome team, and external experts who specialize in
-            web development topics such as accessibility, performance, design,
-            and more.
-          </p>
-        </div>
-        <div class="right-hero">
-          <img src="./images/home-blue_1440.png" alt="" />
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web.dev</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <section class="section-2">
-        <div class="Ai">
-          <img src="./images/ai-feature_960.png" alt="Ai and the web image" />
-          <h4>AI and the web</h4>
-          <p>
-            Discover resources created to help you understand and build
-            performant, web-first experiences with AI.
-          </p>
-          <div class="learn"><span>Learn more</span></div>
-        </div>
-        <div class="Ai">
-          <img
-            src="./images/inp-icon-only_960.jpg"
-            alt="Ai and the web image"
-          />
-          <h4>Optimize INP</h4>
-          <p>
-            Interaction to Next Paint (INP) is now a Core Web Vital metrics.
-            Start measuring and optimizing your site's INP
-          </p>
-          <div class="learn"><span>Learn more</span></div>
-        </div>
-        <div class="Ai">
-          <img
-            src="./images/hero-identity_960.png"
-            alt="Ai and the web image"
-          />
-          <h4>Payments & Identity</h4>
-          <p>
-            Read up on the latest features and best practices when it comes to
-            identity and payment processing.
-          </p>
-          <div class="learn"><span>Learn more</span></div>
-        </div>
-      </section>
-
-      <section class="section-3">
-        <div class="exploring">
-          <div class="explore-text">
-            <h4>Explore the web platform</h4>
-            <p>
-              The web platform is a constantly evolving ecosystem of browser
-              features and APIs for developers to make websites that are easy
-              and delightful to use. These pages are pathways for you to dive
-              into each part of the web platform on web.dev—at your pace.
-            </p>
-          </div>
-          <div class="learn"><span>Start exploring</span></div>
-        </div>
-
-        <div class="html-css">
-          <div class="html">
-            <div class="html-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1.5em"
-                height="1.5em"
-                viewBox="0 0 24 24"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                  fill="#000"
-                  fill-rule="evenodd"
-                  d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <p>HTML</p>
-            <span
-              >HTML is the document layer of the web, providing structure and
-              semantics for pages.</span
-            >
-            <div class="learn"><span>Learn more</span></div>
-          </div>
-
-          <div class="html">
-            <div class="html-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1.5em"
-                height="1.5em"
-                viewBox="0 0 24 24"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                  fill="#000"
-                  fill-rule="evenodd"
-                  d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <p>CSS</p>
-            <span
-              >CSS is the presentation layer of the web, and allows you to make
-              your web pages look exactly like you imagine.</span
-            >
-            <div class="learn"><span>Learn more</span></div>
-          </div>
-
-          <div class="html">
-            <div class="html-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1.5em"
-                height="1.5em"
-                viewBox="0 0 24 24"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                  fill="#000"
-                  fill-rule="evenodd"
-                  d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <p>JavaScript</p>
-            <span
-              >JavaScript adds rich interactivity to web pages, so you can build
-              websites that help users to perform tasks and accomplish
-              goals.</span
-            >
-            <div class="learn"><span>Learn more</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-4">
-        <div class="exploring">
-          <div class="explore-text">
-            <h4>Learn the web platform</h4>
-            <p>
-              New to the web platform? We've got you covered! Dive into each
-              layer, with courses curated specifically for beginners to HTML,
-              CSS, and JavaScript
-            </p>
-          </div>
-          <div class="learn"><span>Start learning</span></div>
-        </div>
-        <section class="section-2 subsection">
-          <div class="Ai courses">
-            <img src="./images/ai-feature_960.png" alt="Ai and the web image" />
-            <p class="course">Course</p>
-            <h4>Learn HTML</h4>
-            <p class="course-learn">
-              A solid overview of HTML for developers, from novice to expert
-              level HTML
-            </p>
-            <div class="learn"><span>Start course</span></div>
-          </div>
-          <div class="Ai courses">
-            <img src="./images/ai-feature_960.png" alt="Ai and the web image" />
-            <p class="course">Course</p>
-            <h4>Learn CSS</h4>
-            <p class="course-learn">
-              A guide to CSS with modules covering everything from accessibility
-              to z-index.
-            </p>
-            <div class="learn"><span>Start course</span></div>
-          </div>
-          <div class="Ai courses">
-            <img src="./images/ai-feature_960.png" alt="Ai and the web image" />
-            <p class="course">Course</p>
-            <h4>Learn JavaScript</h4>
-            <p class="course-learn">
-              An in-depth course on the basics of JavaScript.
-            </p>
-            <div class="learn"><span>Start course</span></div>
-          </div>
-        </section>
-      </section>
-
-      <section class="section-5">
-        <div class="exploring">
-          <div class="explore-text">
-            <h4 class="news">Keep up on web development news</h4>
-            <p>
-              Read our blog to learn the latest news in web development,
-              including new web platform features, updates to Baseline, AI, Core
-              Web Vitals, and more.
-            </p>
-          </div>
-          <div class="learn"><span>Read the blog</span></div>
-        </div>
-        <img src="./images/hero-identity_960.png" alt="">
-      </section>
+<body>
+  <header>
+    <div class="nav-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" class="level5-show">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path fill="#000" fill-rule="evenodd"
+          d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+          clip-rule="evenodd" />
+      </svg>
+      <img src="./images/lockup.svg" alt="web.dev icon image" />
     </div>
-  </body>
+    <div class="nav-2">
+      <div class="resources level4-hide">
+        <span>Resources</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" class="phone-view">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="#000" fill-rule="evenodd"
+            d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+      <span class="level3-hide">Discover</span>
+      <span class="level2-hide">Baseline</span>
+      <span class="level1-hide">How to use Baseline</span>
+      <span class="level1-hide">Blog</span>
+      <span class="level1-hide">Case studies</span>
+      <div class="resources level1-show level5-hide">
+        <span>More</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" class="phone-view">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="#000" fill-rule="evenodd"
+            d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+    </div>
+    <div class="nav-3">
+      <div class="search-div">
+        <div class="search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" class="phone-view">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path fill="#000" fill-rule="evenodd"
+              d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+              clip-rule="evenodd" />
+          </svg>
+          <span class="level5-hide">Search</span>
+        </div>
+        <div class="slash level5-hide"><span>/</span></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" class="phone-view">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path fill="#000" fill-rule="evenodd"
+          d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+          clip-rule="evenodd" />
+      </svg>
+      <div class="language level6-hide">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" class="phone-view">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="#000" fill-rule="evenodd"
+            d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+            clip-rule="evenodd" />
+        </svg>
+        <span>English</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" class="phone-view">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="#000" fill-rule="evenodd"
+            d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="signin">
+        <span>Sign in</span>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="blocks">
+      <div class="blue-block">
+        <p>
+          Guidance to build modern web experiences that work on any browser.
+        </p>
+      </div>
+      <div class="lblue-block">
+        <p>
+          We want to hear from you! We are looking for web developers to
+          participate in user research, product testing, discussion groups and
+          more.
+          <a href="">Apply now to join our WebDev Insights Community.</a>
+        </p>
+      </div>
+    </div>
+
+    <section class="hero-section">
+      <div class="left-hero">
+        <h3>Building a better web, together</h3>
+        <p>
+          We want to help you build beautiful, accessible, fast, and secure
+          websites that work cross-browser, and for all of your users. This
+          site is our home for content to help you on that journey, written by
+          members of the Chrome team, and external experts who specialize in
+          web development topics such as accessibility, performance, design,
+          and more.
+        </p>
+      </div>
+      <div class="right-hero">
+        <img src="./images/home-blue_1440.png" alt="" />
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="Ai">
+        <img src="./images/ai-feature_960.png" alt="Ai and the web image" />
+        <h4>AI and the web</h4>
+        <p>
+          Discover resources created to help you understand and build
+          performant, web-first experiences with AI.
+        </p>
+        <div class="learn"><span>Learn more</span></div>
+      </div>
+      <div class="Ai">
+        <img src="./images/inp-icon-only_960.jpg" alt="Ai and the web image" />
+        <h4>Optimize INP</h4>
+        <p>
+          Interaction to Next Paint (INP) is now a Core Web Vital metrics.
+          Start measuring and optimizing your site's INP
+        </p>
+        <div class="learn"><span>Learn more</span></div>
+      </div>
+      <div class="Ai">
+        <img src="./images/hero-identity_960.png" alt="Ai and the web image" />
+        <h4>Payments & Identity</h4>
+        <p>
+          Read up on the latest features and best practices when it comes to
+          identity and payment processing.
+        </p>
+        <div class="learn"><span>Learn more</span></div>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="exploring">
+        <div class="explore-text">
+          <h4>Explore the web platform</h4>
+          <p>
+            The web platform is a constantly evolving ecosystem of browser
+            features and APIs for developers to make websites that are easy
+            and delightful to use. These pages are pathways for you to dive
+            into each part of the web platform on web.dev—at your pace.
+          </p>
+        </div>
+        <div class="learn"><span>Start exploring</span></div>
+      </div>
+
+      <div class="html-css">
+        <div class="html">
+          <div class="html-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="#000" fill-rule="evenodd"
+                d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <p>HTML</p>
+          <span>HTML is the document layer of the web, providing structure and
+            semantics for pages.</span>
+          <div class="learn"><span>Learn more</span></div>
+        </div>
+
+        <div class="html">
+          <div class="html-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="#000" fill-rule="evenodd"
+                d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <p>CSS</p>
+          <span>CSS is the presentation layer of the web, and allows you to make
+            your web pages look exactly like you imagine.</span>
+          <div class="learn"><span>Learn more</span></div>
+        </div>
+
+        <div class="html">
+          <div class="html-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="#000" fill-rule="evenodd"
+                d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <p>JavaScript</p>
+          <span>JavaScript adds rich interactivity to web pages, so you can build
+            websites that help users to perform tasks and accomplish
+            goals.</span>
+          <div class="learn"><span>Learn more</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-4">
+      <div class="exploring">
+        <div class="explore-text">
+          <h4>Learn the web platform</h4>
+          <p>
+            New to the web platform? We've got you covered! Dive into each
+            layer, with courses curated specifically for beginners to HTML,
+            CSS, and JavaScript
+          </p>
+        </div>
+        <div class="learn"><span>Start learning</span></div>
+      </div>
+      <section class="section-2 subsection">
+        <div class="Ai courses">
+          <img src="./images/ai-feature_960.png" alt="Ai and the web image" />
+          <p class="course">Course</p>
+          <h4>Learn HTML</h4>
+          <p class="course-learn">
+            A solid overview of HTML for developers, from novice to expert
+            level HTML
+          </p>
+          <div class="learn"><span>Start course</span></div>
+        </div>
+        <div class="Ai courses">
+          <img src="./images/ai-feature_960.png" alt="Ai and the web image" />
+          <p class="course">Course</p>
+          <h4>Learn CSS</h4>
+          <p class="course-learn">
+            A guide to CSS with modules covering everything from accessibility
+            to z-index.
+          </p>
+          <div class="learn"><span>Start course</span></div>
+        </div>
+        <div class="Ai courses">
+          <img src="./images/ai-feature_960.png" alt="Ai and the web image" />
+          <p class="course">Course</p>
+          <h4>Learn JavaScript</h4>
+          <p class="course-learn">
+            An in-depth course on the basics of JavaScript.
+          </p>
+          <div class="learn"><span>Start course</span></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="section-5">
+      <div class="exploring">
+        <div class="explore-text">
+          <h4 class="news">Keep up on web development news</h4>
+          <p>
+            Read our blog to learn the latest news in web development,
+            including new web platform features, updates to Baseline, AI, Core
+            Web Vitals, and more.
+          </p>
+        </div>
+        <div class="learn"><span>Read the blog</span></div>
+      </div>
+      <img src="./images/hero-identity_960.png" alt="" />
+    </section>
+
+    <section class="section-6">
+      <div class="first-6">
+        <h3>Baseline</h3>
+        <p>Get up to speed with the latest updates and news on Baseline.</p>
+        <div class="learn"><span>More on Baseline</span></div>
+      </div>
+      <div class="second-third">
+        <div class="second-6">
+          <div class="upper">
+            <p>
+              Find features to support for Interop 2027 with your coding agent
+            </p>
+            <span>Learn how you can use your coding agent to find Interop 2027
+              proposals to upvote, or find features to propose.</span>
+          </div>
+          <div class="lower">
+            <p>July 2026 Baseline monthly digest</p>
+            <span>Read about various happenings with Baseline during July 2026</span>
+          </div>
+        </div>
+        <div class="third-6">
+          <div class="upper">
+            <p>
+              Submit your proposals for Interop 2027
+            </p>
+            <span>
+              It's time to let us know which web platform features should be part of Interop 2027.
+            </span>
+          </div>
+          <div class="lower">
+            <p>July 2026 Baseline monthly digest</p>
+            <span>Read about various happenings with Baseline during July 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-6 surface">
+      <div class="first-6">
+        <h3>CSS and UI design</h3>
+        <p>Learn the latest tips and techniques to use in your work, right now.</p>
+        <div class="learn"><span>Explore CSS</span></div>
+      </div>
+      <div class="second-third">
+        <div class="second-6">
+          <div class="upper">
+            <p>
+              Adapting typography to user preference using CSS
+            </p>
+            <span>Adapt a font to your users' preferences, so they're maximally comfortable reading your content</span>
+          </div>
+          <div class="lower">
+            <p>What are source maps?</p>
+            <span>Improve web debugging experience with source maps.</span>
+          </div>
+        </div>
+        <div class="third-6">
+          <div class="upper">
+            <p>
+              New CSS color spaces and functions in all major engines
+            </p>
+            <span>
+              All major engines now support the new CSS color spaces and functions. Find out how they can bring vibrancy
+              to your designs
+            </span>
+          </div>
+          <div class="lower">
+            <p>CSS subgrid</p>
+            <span>Subgrid is now interoperable across all three major engines. Find out how to use it.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-6">
+      <div class="first-6">
+        <h3>Core Web Vitals</h3>
+        <p>Build faster websites and apps by understanding Core Web Vitals and other metrics.</p>
+        <div class="learn"><span>Explore core web vitals</span></div>
+      </div>
+      <div class="second-third">
+        <div class="second-6">
+          <div class="upper">
+            <p>
+              The most effective ways to improve Core Web Vitals
+            </p>
+            <span>A collection of best practices for optimizing websites' Core Web Vitals performance based on the state
+              of the web.</span>
+          </div>
+          <div class="lower">
+            <p>Common misconceptions about how to optimize LCP</p>
+            <span>Explore common misconceptions about optimizing Largest Contentful Paint by looking beyond image
+              optimization and considering factors like Time to First Byte and resource load delay.</span>
+          </div>
+        </div>
+        <div class="third-6">
+          <div class="upper">
+            <p>
+              How to optimize INP
+            </p>
+            <span>
+              Learn how to optimize for the Interaction to Next Paint metric.
+            </span>
+          </div>
+          <div class="lower">
+            <p>Best practices for measuring Web Vitals in the field</p>
+            <span>Guidance for collecting and reporting Web Vitals quickly and reliably.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-6 surface">
+      <div class="first-6">
+        <h3>Progressive Web Apps</h3>
+        <p>Create capable web experiences.</p>
+        <div class="learn"><span>More on PWA</span></div>
+      </div>
+      <div class="second-third">
+        <div class="second-6">
+          <div class="upper">
+            <p>
+              Learn PWA
+            </p>
+            <span>A course that breaks down every aspect of modern progressive web app development.</span>
+          </div>
+          <div class="lower">
+            <p>New patterns for amazing apps</p>
+            <span>Dive into a fantastic collection of new patterns for amazing apps, including clipboard patterns, file
+              patterns, and advanced app patterns</span>
+          </div>
+        </div>
+        <div class="third-6">
+          <div class="upper">
+            <p>
+              TransformStream is now supported cross browser.
+            </p>
+            <span>
+              Now that transform streams are supported in Safari, Firefox, and Chrome they are finally ready for prime
+              time
+            </span>
+          </div>
+          <div class="lower">
+            <p>Project Fugu API showcase</p>
+            <span>On the Chrome Developers site, explore capabilities APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-6">
+      <div class="first-6">
+        <h3>Accessible for all</h3>
+        <p>Learn how to make your sites more accessible for people with disabilities, whether permanent, temporary, or
+          situational.</p>
+        <div class="learn"><span>More on accessibility</span></div>
+      </div>
+      <div class="second-third">
+        <div class="second-6">
+          <div class="upper">
+            <p>
+              Learn Accessibility
+            </p>
+            <span>Our new course is a great entry point and reference for accessibility topics</span>
+          </div>
+          <div class="lower">
+            <p>Building the main navigation for a website</p>
+            <span>This tutorial describes how to build an accessible main navigation of a website. You learn about
+              semantic HTML, accessibility, and how using ARIA attributes can sometimes do more harm than good</span>
+          </div>
+        </div>
+        <div class="third-6">
+          <div class="upper">
+            <p>
+              Testing web design color contrast
+            </p>
+            <span>
+              An overview of three tools and techniques for testing and verifying accessible color contrast of your
+              design.
+            </span>
+          </div>
+          <div class="lower">
+            <p>Community highlight: Melanie Sumner</p>
+            <span>Read our interview with Melanie, a software engineer who specializes in digital accessibility.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-6 surface">
+      <div class="first-6">
+        <h3>Payments and identity</h3>
+        <p>Find the latest techniques and best practices for payments and helping users safely log into your sites and
+          apps.</p>
+        <div class="learn"><span>More on identity</span></div>
+      </div>
+      <div class="second-third">
+        <div class="second-6">
+          <div class="upper">
+            <p>
+              Create a passkey for passwordless logins
+            </p>
+            <span>Passkeys make user accounts safer, simpler, easier to use</span>
+          </div>
+          <div class="lower">
+            <p>Web payments overview</p>
+            <span>Learn more about Web Payments and how they work.</span>
+          </div>
+        </div>
+        <div class="third-6">
+          <div class="upper">
+            <p>
+              Sign in with a passkey
+            </p>
+            <span>
+              Create a sign in experience that uses passkeys while still accommodating existing password users
+            </span>
+          </div>
+          <div class="lower">
+            <p>Payment and address form best practices</p>
+            <span>Maximize conversions by helping your users complete address and payment forms as quickly and easily as
+              possible.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-7">
+      <h2>Developer Newsletter</h2>
+      <p class="latest">Get the latest news, techniques and updates straight to your inbox.</p>
+      <form action="" method="post">
+        <div class="names">
+          <div>
+            <label for="fname">First Name</label><br>
+            <input type="text" name="first-name" id="fname" placeholder="First Name">
+          </div>
+          <div>
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="last-name" id="lname" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="email">
+          <label for="mail">Your Email</label><br>
+          <input type="email" name="email" id="mail" placeholder="Your Email">
+        </div>
+        <div class="country">
+          <label for="country">Country</label><br>
+          <select name="country" id="country">
+            <option value="none"></option>
+            <option value="australia">Australia</option>
+            <option value="bahamas">Bahamas</option>
+            <option value="nigeria">Nigeria</option>
+          </select>
+        </div>
+        <p class="mid-text">Don't worry, no spam here! Your information will only be used for web.dev and Chrome related
+          updates and
+          our emails are typically no more than 1-2 times a month. You can unsubscribe anytime.
+        </p>
+        <div>
+          <input type="checkbox" name="add" id="add" class="checkbox">
+          <label for="add" class="check">Add me to the web.dev mailing list</label>
+        </div>
+        <div>
+          <input type="checkbox" name="policy" id="policy" class="checkbox">
+          <label for="policy" class="check">I accept Google's <a href="">Terms and Conditions</a> and acknowledge that my information will be used in
+            accordance with Google's <a href="">Privacy Policy.</a></label>
+        </div>
+        <button type="submit">SUSCRIBE</button>
+      </form>
+    </section>
+  </div>
+</body>
+
 </html>
